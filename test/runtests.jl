@@ -4,5 +4,7 @@ using Test
 @testset "DemoPackagePNL.jl" begin
     # Write your tests here.
     msgname = "Frodo"
-    @test DemoPackagePNL.offer_greeting(msgname) == "Hello $msgname, Demo world!"
+
+    @test offer_greeting(msgname) == "Hello $msgname, Demo world!"
+    @test DemoPackagePNL.print_greeting(msgname) == msgname
 end
